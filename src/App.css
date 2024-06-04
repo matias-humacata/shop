@@ -3,19 +3,54 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
+
+
+/* Posicionar el logo en la esquina superior derecha */
 .logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
+.home {
+  
+  color:black;
+ 
+  top: 20px;
+  left: 20px;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+/*Posicion del carrito*/
+.carrito {
+  
+  color: black;
+  position: fixed;
+  top: 20px; /* Ajusta la distancia desde el borde superior */
+  right: 9%; /* Ajusta la distancia desde el borde derecho */
+  height: 6em; /* Ajusta la altura según sea necesario */
+  padding: 1.5em; /* Ajusta el espacio interior según sea necesario */
+  will-change: filter;
+  transition: filter 300ms;
 }
 
 @keyframes logo-spin {
@@ -33,6 +68,69 @@
   }
 }
 
+
+
+/* Estilos de Carrito */
+
+.container-cart-products{
+
+ display:inline-block;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart {
+  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+
+.cart h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.cart-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc; /* Añade una línea separadora entre elementos del carrito */
+  padding-bottom: 10px; /* Espacio entre elementos */
+
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Elimina la línea separadora del último elemento */
+}
+
+.cart-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.cart-item p {
+  margin: 8px 0;
+}
+
+.cart-item button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #cc0000;
+}
+
 .card {
   padding: 2em;
 }
@@ -40,3 +138,19 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@media (max-width: 768px) {
+  .fixed-element {
+      width: 250px; /* Ajusta el ancho para pantallas medianas */
+      right: 10px; /* Ajusta la posición */
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-element {
+      width: calc(100% - 40px); /* Ajusta el ancho para pantallas pequeñas */
+      right: 10px; /* Ajusta la posición */
+      left: 10px; /* Centro en pantallas muy pequeñas */
+  }
+} 

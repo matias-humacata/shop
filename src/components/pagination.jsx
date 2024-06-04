@@ -1,4 +1,6 @@
 import React from 'react';
+import '../App.css';
+import '../index.css';
 
 export const Pagination = ( {productsPerPage, totalProducts, currentPage, setCurrentPage} ) => {
 
@@ -46,3 +48,5 @@ const onSpecificPage = (n) =>{
         </nav>
     );  
 };
+
+export default Pagination;
