@@ -142,14 +142,15 @@
 @media (max-width: 768px) {
   .fixed-element {
       width: 250px; 
-      right: 10px; /* Ajusta la posición */
+      right: 10px; 
   }
 }
 
 @media (max-width: 480px) {
   .fixed-element {
-      width: calc(100% - 40px); /* Ajusta el ancho para pantallas pequeñas */
-      right: 10px; /* Ajusta la posición */
+      width: calc(100% - 40px);
+      right: 10px; 
+    
       left: 10px; /* Centro en pantallas muy pequeñas */
   }
 } 
