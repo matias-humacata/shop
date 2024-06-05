@@ -100,13 +100,12 @@
 
 .cart-item {
   margin-bottom: 16px;
-  border-bottom: 1px solid #ccc; /* Añade una línea separadora entre elementos del carrito */
-  padding-bottom: 10px; /* Espacio entre elementos */
-
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 10px; 
 }
 
 .cart-item:last-child {
-  border-bottom: none; /* Elimina la línea separadora del último elemento */
+  border-bottom: none; 
 }
 
 .cart-item h3 {
@@ -142,7 +141,7 @@
 
 @media (max-width: 768px) {
   .fixed-element {
-      width: 250px; /* Ajusta el ancho para pantallas medianas */
+      width: 250px; 
       right: 10px; /* Ajusta la posición */
   }
 }
