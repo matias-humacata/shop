@@ -45,10 +45,10 @@
   
   color: black;
   position: fixed;
-  top: 20px; /* Ajusta la distancia desde el borde superior */
-  right: 9%; /* Ajusta la distancia desde el borde derecho */
-  height: 6em; /* Ajusta la altura según sea necesario */
-  padding: 1.5em; /* Ajusta el espacio interior según sea necesario */
+  top: 20px; 
+  right: 9%; 
+  height: 6em; 
+  padding: 1.5em; 
   will-change: filter;
   transition: filter 300ms;
 }
