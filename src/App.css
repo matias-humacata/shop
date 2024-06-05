@@ -151,6 +151,6 @@
       width: calc(100% - 40px);
       right: 10px; 
     
-      left: 10px; /* Centro en pantallas muy pequeñas */
+      left: 10px; 
   }
 } 
